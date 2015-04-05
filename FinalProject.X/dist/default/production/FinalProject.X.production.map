@@ -157,11 +157,11 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200              0x1a1c          0x272a  (10026)
 .const                      0x1c1c                0x2c            0x42  (66)
-.text                       0x1c48               0x27a           0x3b7  (951)
-.dinit                      0x1ec2               0x1aa           0x27f  (639)
-.text                       0x206c               0x53e           0x7dd  (2013)
+.text                       0x1c48               0x27e           0x3bd  (957)
+.dinit                      0x1ec6               0x1aa           0x27f  (639)
+.text                       0x2070               0x53e           0x7dd  (2013)
 
-                     Total program memory used (bytes):         0x357f  (13695) 20%
+                     Total program memory used (bytes):         0x3585  (13701) 20%
 
 
 Data Memory  [Origin = 0x800, Length = 0x2000]
@@ -280,48 +280,48 @@ External Symbols in Program Memory (by address):
                   0x001b8a                  __dunpack
                   0x001bd8                  ___umuldi3
                   0x001c48                  _writeFourBits
-                  0x001d6a                  _writeLCD
-                  0x001d8a                  _printCharLCD
-                  0x001d9c                  _initLCD
-                  0x001e06                  _printStringLCD
-                  0x001e36                  _clearLCD
-                  0x001e44                  _moveCursorLCD
-                  0x001e66                  _testLCD
-                  0x00206c                  _initADC
-                  0x0020c4                  _readAnalogVoltage
-                  0x00210a                  _printAnalogVoltageLCD
-                  0x0021e4                  _initPWM
-                  0x002288                  _setDutyCycleOCM1
-                  0x0022a4                  _setDutyCycleOCM2
-                  0x0022c0                  _setDutyCycleOCM3
-                  0x0022dc                  _setDutyCycleOCM4
-                  0x0022f8                  _initMotors
-                  0x002302                  _moveForward
-                  0x00230c                  _moveBackward
-                  0x002316                  _STOP
-                  0x00232e                  _LWForward
-                  0x002354                  _RWForward
-                  0x002384                  _RWBackward
-                  0x0023b4                  _LWBackward
-                  0x0023da                  _init_state
-                  0x0023fa                  _forward_state
-                  0x00240e                  _backward_state
-                  0x002422                  _idle_state
-                  0x002436                  _debounce_press_state
-                  0x00248a                  _delayUs
-                  0x0024d8                  _delayMs
-                  0x002530                  _main
-                  0x00256a                  __CNInterrupt
-                  0x00258e                  _initStateButton
+                  0x001d6e                  _writeLCD
+                  0x001d8e                  _printCharLCD
+                  0x001da0                  _initLCD
+                  0x001e0a                  _printStringLCD
+                  0x001e3a                  _clearLCD
+                  0x001e48                  _moveCursorLCD
+                  0x001e6a                  _testLCD
+                  0x002070                  _initADC
+                  0x0020c8                  _readAnalogVoltage
+                  0x00210e                  _printAnalogVoltageLCD
+                  0x0021e8                  _initPWM
+                  0x00228c                  _setDutyCycleOCM1
+                  0x0022a8                  _setDutyCycleOCM2
+                  0x0022c4                  _setDutyCycleOCM3
+                  0x0022e0                  _setDutyCycleOCM4
+                  0x0022fc                  _initMotors
+                  0x002306                  _moveForward
+                  0x002310                  _moveBackward
+                  0x00231a                  _STOP
+                  0x002332                  _LWForward
+                  0x002358                  _RWForward
+                  0x002388                  _RWBackward
+                  0x0023b8                  _LWBackward
+                  0x0023de                  _init_state
+                  0x0023fe                  _forward_state
+                  0x002412                  _backward_state
+                  0x002426                  _idle_state
+                  0x00243a                  _debounce_press_state
+                  0x00248e                  _delayUs
+                  0x0024dc                  _delayMs
+                  0x002534                  _main
+                  0x00256e                  __CNInterrupt
+                  0x002592                  _initStateButton
 
 External Symbols in Program Memory (by name):
 
-                  0x0023b4                  _LWBackward
-                  0x00232e                  _LWForward
-                  0x002384                  _RWBackward
-                  0x002354                  _RWForward
-                  0x002316                  _STOP
-                  0x00256a                  __CNInterrupt
+                  0x0023b8                  _LWBackward
+                  0x002332                  _LWForward
+                  0x002388                  _RWBackward
+                  0x002358                  _RWForward
+                  0x00231a                  _STOP
+                  0x00256e                  __CNInterrupt
                   0x00029a                  __DefaultInterrupt
                   0x0013de                  ___adddf3
                   0x000300                  ___addsf3
@@ -383,36 +383,36 @@ External Symbols in Program Memory (by name):
                   0x000200                  __resetPRI
                   0x00068a                  __sprintf_fF
                   0x000830                  __vfprintf_fF
-                  0x00240e                  _backward_state
-                  0x001e36                  _clearLCD
-                  0x002436                  _debounce_press_state
-                  0x0024d8                  _delayMs
-                  0x00248a                  _delayUs
-                  0x0023fa                  _forward_state
+                  0x002412                  _backward_state
+                  0x001e3a                  _clearLCD
+                  0x00243a                  _debounce_press_state
+                  0x0024dc                  _delayMs
+                  0x00248e                  _delayUs
+                  0x0023fe                  _forward_state
                   0x00172a                  _frexp
                   0x00172a                  _frexpl
-                  0x002422                  _idle_state
-                  0x00206c                  _initADC
-                  0x001d9c                  _initLCD
-                  0x0022f8                  _initMotors
-                  0x0021e4                  _initPWM
-                  0x00258e                  _initStateButton
-                  0x0023da                  _init_state
-                  0x002530                  _main
-                  0x00230c                  _moveBackward
-                  0x001e44                  _moveCursorLCD
-                  0x002302                  _moveForward
-                  0x00210a                  _printAnalogVoltageLCD
-                  0x001d8a                  _printCharLCD
-                  0x001e06                  _printStringLCD
-                  0x0020c4                  _readAnalogVoltage
-                  0x002288                  _setDutyCycleOCM1
-                  0x0022a4                  _setDutyCycleOCM2
-                  0x0022c0                  _setDutyCycleOCM3
-                  0x0022dc                  _setDutyCycleOCM4
-                  0x001e66                  _testLCD
+                  0x002426                  _idle_state
+                  0x002070                  _initADC
+                  0x001da0                  _initLCD
+                  0x0022fc                  _initMotors
+                  0x0021e8                  _initPWM
+                  0x002592                  _initStateButton
+                  0x0023de                  _init_state
+                  0x002534                  _main
+                  0x002310                  _moveBackward
+                  0x001e48                  _moveCursorLCD
+                  0x002306                  _moveForward
+                  0x00210e                  _printAnalogVoltageLCD
+                  0x001d8e                  _printCharLCD
+                  0x001e0a                  _printStringLCD
+                  0x0020c8                  _readAnalogVoltage
+                  0x00228c                  _setDutyCycleOCM1
+                  0x0022a8                  _setDutyCycleOCM2
+                  0x0022c4                  _setDutyCycleOCM3
+                  0x0022e0                  _setDutyCycleOCM4
+                  0x001e6a                  _testLCD
                   0x001c48                  _writeFourBits
-                  0x001d6a                  _writeLCD
+                  0x001d6e                  _writeLCD
 
 Memory Configuration
 
@@ -631,17 +631,17 @@ __CONFIG1         0x00abfe          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x39fe
+.debug_info       0x000000       0x3b5d
  *(.debug_info)
  .debug_info      0x000000        0x8a9 build/default/production/ADC.o
  .debug_info      0x0008a9        0x5fa build/default/production/LCD.o
  .debug_info      0x000ea3        0x41d build/default/production/main.o
  .debug_info      0x0012c0        0x4d5 build/default/production/motors.o
- .debug_info      0x001795        0xf73 build/default/production/PWM.o
- .debug_info      0x002708        0x19c build/default/production/shared.o
- .debug_info      0x0028a4        0x2e3 build/default/production/stateFunctions.o
- .debug_info      0x002b87        0xa76 build/default/production/switches.o
- .debug_info      0x0035fd        0x401 build/default/production/timer.o
+ .debug_info      0x001795       0x10d2 build/default/production/PWM.o
+ .debug_info      0x002867        0x19c build/default/production/shared.o
+ .debug_info      0x002a03        0x2e3 build/default/production/stateFunctions.o
+ .debug_info      0x002ce6        0xa76 build/default/production/switches.o
+ .debug_info      0x00375c        0x401 build/default/production/timer.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x7c3
@@ -679,16 +679,16 @@ __CONFIG1         0x00abfe          0x2
  .debug_frame     0x00028c         0x24 build/default/production/switches.o
  .debug_frame     0x0002b0         0x34 build/default/production/timer.o
 
-.debug_str        0x000000        0x1b1
+.debug_str        0x000000        0x1c4
  *(.debug_str)
  .debug_str       0x000000         0x46 build/default/production/ADC.o
  .debug_str       0x000046         0x2a build/default/production/LCD.o
  .debug_str       0x000070         0x20 build/default/production/main.o
  .debug_str       0x000090         0x13 build/default/production/motors.o
- .debug_str       0x0000a3         0x85 build/default/production/PWM.o
- .debug_str       0x000128         0x31 build/default/production/stateFunctions.o
- .debug_str       0x000159         0x45 build/default/production/switches.o
- .debug_str       0x00019e         0x13 build/default/production/timer.o
+ .debug_str       0x0000a3         0x98 build/default/production/PWM.o
+ .debug_str       0x00013b         0x31 build/default/production/stateFunctions.o
+ .debug_str       0x00016c         0x45 build/default/production/switches.o
+ .debug_str       0x0001b1         0x13 build/default/production/timer.o
 
 .debug_loc
  *(.debug_loc)
@@ -768,7 +768,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000034          0x4 LONG 0x29a DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000036          0x4 LONG 0x29a DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000038          0x4 LONG 0x29a DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003a          0x4 LONG 0x256a DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003a          0x4 LONG 0x256e DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003c          0x4 LONG 0x29a DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003e          0x4 LONG 0x29a DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000040          0x4 LONG 0x29a DEFINED (__Interrupt22)?ABSOLUTE (__Interrupt22):ABSOLUTE (__DefaultInterrupt)
@@ -896,7 +896,7 @@ __CONFIG1         0x00abfe          0x2
                   0x000134          0x4 LONG 0x29a DEFINED (__AltSI2C1Interrupt)?ABSOLUTE (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000136          0x4 LONG 0x29a DEFINED (__AltMI2C1Interrupt)?ABSOLUTE (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000138          0x4 LONG 0x29a DEFINED (__AltCompInterrupt)?ABSOLUTE (__AltCompInterrupt):DEFINED (__CompInterrupt)?ABSOLUTE (__CompInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00013a          0x4 LONG 0x256a DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00013a          0x4 LONG 0x256e DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013c          0x4 LONG 0x29a DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013e          0x4 LONG 0x29a DEFINED (__AltInterrupt21)?ABSOLUTE (__AltInterrupt21):DEFINED (__Interrupt21)?ABSOLUTE (__Interrupt21):ABSOLUTE (__DefaultInterrupt)
                   0x000140          0x4 LONG 0x29a DEFINED (__AltInterrupt22)?ABSOLUTE (__AltInterrupt22):DEFINED (__Interrupt22)?ABSOLUTE (__Interrupt22):ABSOLUTE (__DefaultInterrupt)
@@ -1581,7 +1581,7 @@ LOAD default_isr
 LOAD data_init
 
 .debug_pubtypes
-                  0x0000c0        0x474
+                  0x0000c0        0x4b0
  .debug_pubtypes
                   0x0000c0         0x98 build/default/production/ADC.o
  .debug_pubtypes
@@ -1591,132 +1591,132 @@ LOAD data_init
  .debug_pubtypes
                   0x000202         0x4e build/default/production/motors.o
  .debug_pubtypes
-                  0x000250        0x14e build/default/production/PWM.o
+                  0x000250        0x18a build/default/production/PWM.o
  .debug_pubtypes
-                  0x00039e         0x20 build/default/production/shared.o
+                  0x0003da         0x20 build/default/production/shared.o
  .debug_pubtypes
-                  0x0003be         0x3f build/default/production/stateFunctions.o
+                  0x0003fa         0x3f build/default/production/stateFunctions.o
  .debug_pubtypes
-                  0x0003fd         0xe9 build/default/production/switches.o
+                  0x000439         0xe9 build/default/production/switches.o
  .debug_pubtypes
-                  0x0004e6         0x4e build/default/production/timer.o
+                  0x000522         0x4e build/default/production/timer.o
 
 __c30_signature
-                  0x000534        0x156
+                  0x000570        0x156
  __c30_signature
-                  0x000534          0x6 build/default/production/ADC.o
+                  0x000570          0x6 build/default/production/ADC.o
  __c30_signature
-                  0x00053a          0x6 build/default/production/LCD.o
+                  0x000576          0x6 build/default/production/LCD.o
  __c30_signature
-                  0x000540          0x6 build/default/production/main.o
+                  0x00057c          0x6 build/default/production/main.o
  __c30_signature
-                  0x000546          0x6 build/default/production/motors.o
+                  0x000582          0x6 build/default/production/motors.o
  __c30_signature
-                  0x00054c          0x6 build/default/production/PWM.o
+                  0x000588          0x6 build/default/production/PWM.o
  __c30_signature
-                  0x000552          0x6 build/default/production/shared.o
+                  0x00058e          0x6 build/default/production/shared.o
  __c30_signature
-                  0x000558          0x6 build/default/production/stateFunctions.o
+                  0x000594          0x6 build/default/production/stateFunctions.o
  __c30_signature
-                  0x00055e          0x6 build/default/production/switches.o
+                  0x00059a          0x6 build/default/production/switches.o
  __c30_signature
-                  0x000564          0x6 build/default/production/timer.o
+                  0x0005a0          0x6 build/default/production/timer.o
  __c30_signature
-                  0x00056a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
+                  0x0005a6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(crt0_standard.o)
  __c30_signature
-                  0x000570          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
+                  0x0005ac          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(data_init_standard.o)
  __c30_signature
-                  0x000576          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(addsf3.eo)
+                  0x0005b2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(addsf3.eo)
  __c30_signature
-                  0x00057c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divsf3.eo)
+                  0x0005b8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divsf3.eo)
  __c30_signature
-                  0x000582          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(feqltle.eo)
+                  0x0005be          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(feqltle.eo)
  __c30_signature
-                  0x000588          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fgtge.eo)
+                  0x0005c4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fgtge.eo)
  __c30_signature
-                  0x00058e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixsfsi.eo)
+                  0x0005ca          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixsfsi.eo)
  __c30_signature
-                  0x000594          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
+                  0x0005d0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixunssfsi.eo)
  __c30_signature
-                  0x00059a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
+                  0x0005d6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatsisf.eo)
  __c30_signature
-                  0x0005a0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
+                  0x0005dc          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatunsisf.eo)
  __c30_signature
-                  0x0005a6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fpack.eo)
+                  0x0005e2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fpack.eo)
  __c30_signature
-                  0x0005ac          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack.eo)
+                  0x0005e8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack.eo)
  __c30_signature
-                  0x0005b2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack2.eo)
+                  0x0005ee          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(funpack2.eo)
  __c30_signature
-                  0x0005b8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(futil.eo)
+                  0x0005f4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(futil.eo)
  __c30_signature
-                  0x0005be          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
+                  0x0005fa          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsf3.eo)
  __c30_signature
-                  0x0005c4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fcompare.eo)
+                  0x000600          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fcompare.eo)
  __c30_signature
-                  0x0005ca          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
+                  0x000606          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatdisf.eo)
  __c30_signature
-                  0x0005d0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
+                  0x00060c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatundisf.eo)
  __c30_signature
-                  0x0005d6          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
+                  0x000612          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(sprintf_fF.XXeo)
  __c30_signature
-                  0x0005dc          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
+                  0x000618          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(doprnt_fF.XXeo)
  __c30_signature
-                  0x0005e2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(fputc.eo)
+                  0x00061e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(fputc.eo)
  __c30_signature
-                  0x0005e8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(powers.eo)
+                  0x000624          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(powers.eo)
  __c30_signature
-                  0x0005ee          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(_iob.eo)
+                  0x00062a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(_iob.eo)
  __c30_signature
-                  0x0005f4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
+                  0x000630          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libc-elf.a(flsbuf.eo)
  __c30_signature
-                  0x0005fa          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(write.eo)
+                  0x000636          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(write.eo)
  __c30_signature
-                  0x000600          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
+                  0x00063c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libpic30-elf.a(c30_uart.eo)
  __c30_signature
-                  0x000606          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(adddf3.eo)
+                  0x000642          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(adddf3.eo)
  __c30_signature
-                  0x00060c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(deqltle.eo)
+                  0x000648          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(deqltle.eo)
  __c30_signature
-                  0x000612          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dgtge.eo)
+                  0x00064e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dgtge.eo)
  __c30_signature
-                  0x000618          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divdf3.eo)
+                  0x000654          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divdf3.eo)
  __c30_signature
-                  0x00061e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dne.eo)
+                  0x00065a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dne.eo)
  __c30_signature
-                  0x000624          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dpack.eo)
+                  0x000660          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dpack.eo)
  __c30_signature
-                  0x00062a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
+                  0x000666          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dunpack2.eo)
  __c30_signature
-                  0x000630          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
+                  0x00066c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(extendsfdf.eo)
  __c30_signature
-                  0x000636          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
+                  0x000672          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(fixunsdfdi.eo)
  __c30_signature
-                  0x00063c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
+                  0x000678          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(floatundidf.eo)
  __c30_signature
-                  0x000642          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(frexp.eo)
+                  0x00067e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(frexp.eo)
  __c30_signature
-                  0x000648          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(muldf3.eo)
+                  0x000684          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(muldf3.eo)
  __c30_signature
-                  0x00064e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(subdf3.eo)
+                  0x00068a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(subdf3.eo)
  __c30_signature
-                  0x000654          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
+                  0x000690          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(udivsi3.eo)
  __c30_signature
-                  0x00065a          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
+                  0x000696          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(mulsi3.eo)
  __c30_signature
-                  0x000660          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
+                  0x00069c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(divmoddi3.eo)
  __c30_signature
-                  0x000666          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(muldi3.eo)
+                  0x0006a2          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(muldi3.eo)
  __c30_signature
-                  0x00066c          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dcompare.eo)
+                  0x0006a8          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dcompare.eo)
  __c30_signature
-                  0x000672          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
+                  0x0006ae          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dpropagateNaN.eo)
  __c30_signature
-                  0x000678          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dtype.eo)
+                  0x0006b4          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dtype.eo)
  __c30_signature
-                  0x00067e          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dunpack.eo)
+                  0x0006ba          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(dunpack.eo)
  __c30_signature
-                  0x000684          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
+                  0x0006c0          0x6 /Applications/microchip/xc16/v1.23/bin/bin/../../lib/libm-elf.a(umuldi3.eo)
 
 .nbss               0x0800          0x6
  .nbss              0x0800          0x6 build/default/production/shared.o
@@ -1748,51 +1748,51 @@ __c30_signature
  .const             0x9c38          0x8 build/default/production/ADC.o
  .const             0x9c40          0x8 build/default/production/LCD.o
 
-.text             0x001c48        0x27a
- .text            0x001c48        0x27a build/default/production/LCD.o
+.text             0x001c48        0x27e
+ .text            0x001c48        0x27e build/default/production/LCD.o
                   0x001c48                  _writeFourBits
-                  0x001d6a                  _writeLCD
-                  0x001d8a                  _printCharLCD
-                  0x001d9c                  _initLCD
-                  0x001e06                  _printStringLCD
-                  0x001e36                  _clearLCD
-                  0x001e44                  _moveCursorLCD
-                  0x001e66                  _testLCD
+                  0x001d6e                  _writeLCD
+                  0x001d8e                  _printCharLCD
+                  0x001da0                  _initLCD
+                  0x001e0a                  _printStringLCD
+                  0x001e3a                  _clearLCD
+                  0x001e48                  _moveCursorLCD
+                  0x001e6a                  _testLCD
 
-.dinit            0x001ec2        0x1aa
- .dinit           0x001ec2        0x1aa data_init
+.dinit            0x001ec6        0x1aa
+ .dinit           0x001ec6        0x1aa data_init
 
-.text             0x00206c        0x53e
- .text            0x00206c        0x178 build/default/production/ADC.o
-                  0x00206c                  _initADC
-                  0x0020c4                  _readAnalogVoltage
-                  0x00210a                  _printAnalogVoltageLCD
- .text            0x0021e4        0x114 build/default/production/PWM.o
-                  0x0021e4                  _initPWM
-                  0x002288                  _setDutyCycleOCM1
-                  0x0022a4                  _setDutyCycleOCM2
-                  0x0022c0                  _setDutyCycleOCM3
-                  0x0022dc                  _setDutyCycleOCM4
- .text            0x0022f8         0xe2 build/default/production/motors.o
-                  0x0022f8                  _initMotors
-                  0x002302                  _moveForward
-                  0x00230c                  _moveBackward
-                  0x002316                  _STOP
-                  0x00232e                  _LWForward
-                  0x002354                  _RWForward
-                  0x002384                  _RWBackward
-                  0x0023b4                  _LWBackward
- .text            0x0023da         0xb0 build/default/production/stateFunctions.o
-                  0x0023da                  _init_state
-                  0x0023fa                  _forward_state
-                  0x00240e                  _backward_state
-                  0x002422                  _idle_state
-                  0x002436                  _debounce_press_state
- .text            0x00248a         0xa6 build/default/production/timer.o
-                  0x00248a                  _delayUs
-                  0x0024d8                  _delayMs
- .text            0x002530         0x5e build/default/production/main.o
-                  0x002530                  _main
-                  0x00256a                  __CNInterrupt
- .text            0x00258e         0x1c build/default/production/switches.o
-                  0x00258e                  _initStateButton
+.text             0x002070        0x53e
+ .text            0x002070        0x178 build/default/production/ADC.o
+                  0x002070                  _initADC
+                  0x0020c8                  _readAnalogVoltage
+                  0x00210e                  _printAnalogVoltageLCD
+ .text            0x0021e8        0x114 build/default/production/PWM.o
+                  0x0021e8                  _initPWM
+                  0x00228c                  _setDutyCycleOCM1
+                  0x0022a8                  _setDutyCycleOCM2
+                  0x0022c4                  _setDutyCycleOCM3
+                  0x0022e0                  _setDutyCycleOCM4
+ .text            0x0022fc         0xe2 build/default/production/motors.o
+                  0x0022fc                  _initMotors
+                  0x002306                  _moveForward
+                  0x002310                  _moveBackward
+                  0x00231a                  _STOP
+                  0x002332                  _LWForward
+                  0x002358                  _RWForward
+                  0x002388                  _RWBackward
+                  0x0023b8                  _LWBackward
+ .text            0x0023de         0xb0 build/default/production/stateFunctions.o
+                  0x0023de                  _init_state
+                  0x0023fe                  _forward_state
+                  0x002412                  _backward_state
+                  0x002426                  _idle_state
+                  0x00243a                  _debounce_press_state
+ .text            0x00248e         0xa6 build/default/production/timer.o
+                  0x00248e                  _delayUs
+                  0x0024dc                  _delayMs
+ .text            0x002534         0x5e build/default/production/main.o
+                  0x002534                  _main
+                  0x00256e                  __CNInterrupt
+ .text            0x002592         0x1c build/default/production/switches.o
+                  0x002592                  _initStateButton

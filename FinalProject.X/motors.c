@@ -18,8 +18,8 @@
 #define ON 1
 
 
-#define MOTOR_E LATBbits.LATB0
-#define TRIS_MOTOR_E TRISBbits.TRISB0
+#define MOTOR_E LATBbits.LATB4
+#define TRIS_MOTOR_E TRISBbits.TRISB4
 
 
 

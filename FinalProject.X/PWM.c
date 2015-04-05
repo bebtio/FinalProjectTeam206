@@ -17,14 +17,15 @@
 #define OCM_3 20
 #define OCM_4 21
 
-#define TRIS_H15 TRISBbits.TRISB2
-#define TRIS_H10 TRISBbits.TRISB3
-#define TRIS_H2 TRISBbits.TRISB5
-#define TRIS_H7 TRISBbits.TRISB8
-#define LAT_H15 LATBbits.LATB2
-#define LAT_H10 LATBbits.LATB3
-#define LAT_H2 LATBbits.LATB5
-#define LAT_H7 LATBbits.LATB8
+#define TRIS_H15 TRISBbits.TRISB10
+#define TRIS_H10 TRISBbits.TRISB11
+#define TRIS_H2 TRISAbits.TRISA3
+#define TRIS_H7 TRISAbits.TRISA4
+
+#define LAT_H15 LATBbits.LATB10
+#define LAT_H10 LATBbits.LATB11
+#define LAT_H2 LATAbits.LATA3
+#define LAT_H7 LATAbits.LATA4
                      
 
 /************************************************************************************/
@@ -71,11 +72,11 @@ void initPWM(){
     OC4CONbits.OCM = SIMPLEPWMMODE;
 
 
-    // Map output pins
+    // Right Motor
     RPOR1bits.RP2R = OCM_1;   // RP2R map OC1 to pin H-BRIDGE/PIC246 = 15/6
     RPOR1bits.RP3R = OCM_3;   // map OC3 to pin H-BRIDGE/PIC246 = 10/7
 
-    // Module 2
+    // Left Motor
     RPOR2bits.RP5R = OCM_2;   // map OC2 to pin H-BRIDGE/PIC246 = 2/14
     RPOR4bits.RP8R = OCM_4;   // map OC4 to pin H-BRIDGE/PIC246 = 7/17
 

@@ -11,15 +11,22 @@
 #include "timer.h"
 
 #define LCD_DATA   LATB
-#define LCD_RS  LATBbits.LATB7
-#define LCD_E   LATBbits.LATB6
+#define LCD_RS  LATBbits.LATB5
+#define LCD_E   LATBbits.LATB4
 
-#define TRIS_D7  TRISBbits.TRISB15
-#define TRIS_D6  TRISBbits.TRISB14
-#define TRIS_D5  TRISBbits.TRISB13
-#define TRIS_D4  TRISBbits.TRISB12
-#define TRIS_RS  TRISBbits.TRISB7
-#define TRIS_E   TRISBbits.TRISB6
+// Tri State Bits
+#define TRIS_D7  TRISBbits.TRISB9
+#define TRIS_D6  TRISBbits.TRISB8
+#define TRIS_D5  TRISBbits.TRISB7
+#define TRIS_D4  TRISBbits.TRISB6
+#define TRIS_RS  TRISBbits.TRISB5
+#define TRIS_E   TRISBbits.TRISB4
+
+// Latch Bits
+#define LAT_D7  LATBbits.LATB9
+#define LAT_D6  LATBbits.LATB8
+#define LAT_D5  LATBbits.LATB7
+#define LAT_D4  LATBbits.LATB6
 
 #define UPPER 0
 #define LOWER 1
@@ -48,17 +55,17 @@ void writeFourBits(unsigned char word, unsigned int commandType, unsigned int de
 {
     if(lower)
     {
-        LATBbits.LATB15 = BIT(word,3);
-        LATBbits.LATB14 = BIT(word,2);
-        LATBbits.LATB13 = BIT(word,1);
-        LATBbits.LATB12 = BIT(word,0);
+        LAT_D7 = BIT(word,3);
+        LAT_D6 = BIT(word,2);
+        LAT_D5 = BIT(word,1);
+        LAT_D4 = BIT(word,0);
     }
     else
     {
-        LATBbits.LATB15 = BIT(word,7);
-        LATBbits.LATB14 = BIT(word,6);
-        LATBbits.LATB13 = BIT(word,5);
-        LATBbits.LATB12 = BIT(word,4);
+        LAT_D7 = BIT(word,7);
+        LAT_D6 = BIT(word,6);
+        LAT_D5 = BIT(word,5);
+        LAT_D4 = BIT(word,4);
     }
 
     LCD_RS = commandType;   // Write LCD_RS = 1;
