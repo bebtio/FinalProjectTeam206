@@ -11,14 +11,20 @@
 #define TTOT .001                            // Total time signal is high
 #define PRVAL (((TTOT*FCY)/(1)) - 1.0)       
 #define SIMPLEPWMMODE 0b0110
-#define TRIS_B2 TRISBbits.TRISB2
-#define TRIS_B3 TRISBbits.TRISB3
-#define TRIS_B5 TRISBbits.TRISB5
-#define TRIS_B8 TRISBbits.TRISB8
-#define LAT_B2 LATBbits.LATB2
-#define LAT_B3 LATBbits.LATB3
-#define LAT_B5 LATBbits.LATB5
-#define LAT_B8 LATBbits.LATB8
+
+#define OCM_1 18
+#define OCM_2 19
+#define OCM_3 20
+#define OCM_4 21
+
+#define TRIS_H15 TRISBbits.TRISB2
+#define TRIS_H10 TRISBbits.TRISB3
+#define TRIS_H2 TRISBbits.TRISB5
+#define TRIS_H7 TRISBbits.TRISB8
+#define LAT_H15 LATBbits.LATB2
+#define LAT_H10 LATBbits.LATB3
+#define LAT_H2 LATBbits.LATB5
+#define LAT_H7 LATBbits.LATB8
                      
 
 /************************************************************************************/
@@ -27,15 +33,15 @@
 void initPWM(){
 
 
-    TRIS_B2 = 0;
-    TRIS_B3 = 0;
-    TRIS_B5 = 0;
-    TRIS_B8 = 0;
+    TRIS_H15 = 0;
+    TRIS_H10 = 0;
+    TRIS_H2 = 0;
+    TRIS_H7 = 0;
 
-    LAT_B2 = 1;
-    LAT_B3 = 1;
-    LAT_B5 = 1;
-    LAT_B8 = 1;
+    LAT_H15 = 1;
+    LAT_H10 = 1;
+    LAT_H2 = 1;
+    LAT_H7 = 1;
 
     TMR2 = 0;               // Resets Timer 2
     T2CONbits.TCKPS = 0b00; // prescalar of 1 for more acurrate output
@@ -66,12 +72,12 @@ void initPWM(){
 
 
     // Map output pins
-    RPOR1bits.RP2R = 18;   // RP2R map OC1 to pin H-BRIDGE/PIC246 = 15/6
-    RPOR1bits.RP3R = 20;   // map OC3 to pin H-BRIDGE/PIC246 = 10/7
+    RPOR1bits.RP2R = OCM_1;   // RP2R map OC1 to pin H-BRIDGE/PIC246 = 15/6
+    RPOR1bits.RP3R = OCM_3;   // map OC3 to pin H-BRIDGE/PIC246 = 10/7
 
     // Module 2
-    RPOR2bits.RP5R = 19;   // map OC2 to pin H-BRIDGE/PIC246 = 2/14
-    RPOR4bits.RP8R = 21;   // map OC4 to pin H-BRIDGE/PIC246 = 7/17
+    RPOR2bits.RP5R = OCM_2;   // map OC2 to pin H-BRIDGE/PIC246 = 2/14
+    RPOR4bits.RP8R = OCM_4;   // map OC4 to pin H-BRIDGE/PIC246 = 7/17
 
     // Turn on Timer2
     T2CONbits.TON = 1;      

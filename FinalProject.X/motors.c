@@ -16,18 +16,20 @@
 // if duty cycle is 0, then voltage stays low
 #define LOW 0
 #define ON 1
-#define enable LATBbits.LATB0
-#define enable_pin TRISBbits.TRISB0
+
+
+#define MOTOR_E LATBbits.LATB0
+#define TRIS_MOTOR_E TRISBbits.TRISB0
 
 
 
 /**************************************************************************************/
 
-// Initialize the enable pin for the motors and disable the motors for initialization
+// Initialize the MOTOR_E pin for the motors and disable the motors for initialization
 void initMotors()
 {
-    enable_pin = ON;
-    enable = LOW;
+    TRIS_MOTOR_E = ON;
+    MOTOR_E = LOW;
 }
 
 /**************************************************************************************/
@@ -61,7 +63,7 @@ void STOP()
 
     setDutyCycleOCM2(LOW);
     setDutyCycleOCM4(LOW);
-    enable = 0;
+    MOTOR_E = 0;
 }
 
 /**************************************************************************************/
@@ -69,7 +71,7 @@ void STOP()
 // Moves the Left wheel forward at rate determined by HIGH_LEFT function/equation
 void LWForward()
 {
-    enable = 1;
+    MOTOR_E = 1;
     setDutyCycleOCM2(HIGH_LEFT);
     setDutyCycleOCM4(LOW);
 }
@@ -79,7 +81,7 @@ void LWForward()
 // Moves the Right wheel forward at rate determined by HIGH_RIGHT function/equation
 void RWForward()
 {
-    enable = 1;
+    MOTOR_E = 1;
     setDutyCycleOCM3(HIGH_RIGHT);
     setDutyCycleOCM1(LOW);
 }
@@ -89,7 +91,7 @@ void RWForward()
 // Moves the Right wheel backward at rate determined by HIGH_RIGHT function/equation
 void RWBackward()
 {
-    enable = 1;
+    MOTOR_E = 1;
     setDutyCycleOCM3(LOW);
     setDutyCycleOCM1(HIGH_RIGHT);
 }
@@ -99,7 +101,7 @@ void RWBackward()
 // Moves the Left wheel bacwkard at rate determined by HIGH_LEFT function/equation
 void LWBackward()
 {
-    enable = 1;
+    MOTOR_E = 1;
     setDutyCycleOCM2(LOW);
     setDutyCycleOCM4(HIGH_LEFT);
 }
